@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Doe de test - Deconnectie Personas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+
+    <main class="container my-5">
+        <h1 class="mb-4">Welk persona past het best?</h1>
+
+        <form id="selftest-form">
+            <div class="card mb-4 shadow-sm welcome-card">
+                <div class="card-body">
+                    <h3 class="card-title mb-4">Hoe goed past deze stelling bij jou?</h3>
+
+                    <div class="table-responsive">
+                        <table class="table align-middle selftest-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col" style="width: 40%;">Stelling</th>
+                                    <th scope="col" class="text-center" style="width: 12%;">Helemaal oneens</th>
+                                    <th scope="col" class="text-center" style="width: 12%;">Eerder oneens</th>
+                                    <th scope="col" class="text-center" style="width: 12%;">Neutraal</th>
+                                    <th scope="col" class="text-center" style="width: 12%;">Eerder eens</th>
+                                    <th scope="col" class="text-center" style="width: 12%;">Helemaal eens</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1. Ik ervaar druk en/of moeilijkheden met psychologisch loskoppelen van het werk omwille van de aanwezigheid van werkgerelateerd ICTs in mijn privéleven.</td>
+                                    <td class="text-center p-0" data-label="Helemaal oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q1" value="1" required></label></td>
+                                    <td class="text-center p-0" data-label="Eerder oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q1" value="2"></label></td>
+                                    <td class="text-center p-0" data-label="Neutraal"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q1" value="3"></label></td>
+                                    <td class="text-center p-0" data-label="Eerder eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q1" value="4"></label></td>
+                                    <td class="text-center p-0" data-label="Helemaal eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q1" value="5"></label></td>
+                                </tr>
+                                <tr>
+                                    <td>2. Ik ervaar focusverlies en/of mentale uitputting omwille van werkgerelateerd ICTs die mijn werktaken onderbreken.</td>
+                                    <td class="text-center p-0" data-label="Helemaal oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q2" value="1" required></label></td>
+                                    <td class="text-center p-0" data-label="Eerder oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q2" value="2"></label></td>
+                                    <td class="text-center p-0" data-label="Neutraal"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q2" value="3"></label></td>
+                                    <td class="text-center p-0" data-label="Eerder eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q2" value="4"></label></td>
+                                    <td class="text-center p-0" data-label="Helemaal eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q2" value="5"></label></td>
+                                </tr>
+                                <tr>
+                                    <td>3. Ik voel me onzeker, angstig, en/of ben bang om fouten te maken omwille van het gebruik van werkgerelateerde ICTs. </td>
+                                    <td class="text-center p-0" data-label="Helemaal oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q3" value="1" required></label></td>
+                                    <td class="text-center p-0" data-label="Eerder oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q3" value="2"></label></td>
+                                    <td class="text-center p-0" data-label="Neutraal"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q3" value="3"></label></td>
+                                    <td class="text-center p-0" data-label="Eerder eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q3" value="4"></label></td>
+                                    <td class="text-center p-0" data-label="Helemaal eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q3" value="5"></label></td>
+                                </tr>
+                                <tr>
+                                    <td>4. Soms voel ik mij dom omdat ik niet weet hoe ik werkgerelateerde ICTs moet gebruiken. </td>
+                                    <td class="text-center p-0" data-label="Helemaal oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q4" value="1" required></label></td>
+                                    <td class="text-center p-0" data-label="Eerder oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q4" value="2"></label></td>
+                                    <td class="text-center p-0" data-label="Neutraal"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q4" value="3"></label></td>
+                                    <td class="text-center p-0" data-label="Eerder eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q4" value="4"></label></td>
+                                    <td class="text-center p-0" data-label="Helemaal eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q4" value="5"></label></td>
+                                </tr>
+                                <tr>
+                                    <td>5. Ik ervaar in controle, voel me comfortabel en/of heb duidelijkheid omwille van de aanwezigheid van en/of actief gebruik van W-ICTs buiten de werkuren. </td>
+                                    <td class="text-center p-0" data-label="Helemaal oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q5" value="1" required></label></td>
+                                    <td class="text-center p-0" data-label="Eerder oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q5" value="2"></label></td>
+                                    <td class="text-center p-0" data-label="Neutraal"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q5" value="3"></label></td>
+                                    <td class="text-center p-0" data-label="Eerder eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q5" value="4"></label></td>
+                                    <td class="text-center p-0" data-label="Helemaal eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q5" value="5"></label></td>
+                                </tr>
+                                <tr>
+                                    <td>6. Ik ervaar onderbrekingen van werktaken door W-ICTs als energie-gevens, en houden me alert en gefocust.</td>
+                                    <td class="text-center p-0" data-label="Helemaal oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q6" value="1" required></label></td>
+                                    <td class="text-center p-0" data-label="Eerder oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q6" value="2"></label></td>
+                                    <td class="text-center p-0" data-label="Neutraal"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q6" value="3"></label></td>
+                                    <td class="text-center p-0" data-label="Eerder eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q6" value="4"></label></td>
+                                    <td class="text-center p-0" data-label="Helemaal eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q6" value="5"></label></td>
+                                </tr>
+                                <tr>
+                                    <td>7. Ik voel mij gerustgesteld wanneer ik buiten de werkuren via werkgerelateerde ICT's op de hoogte kan blijven van wat er op het werk gebeurt.</td>
+                                    <td class="text-center p-0" data-label="Helemaal oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q7" value="1" required></label></td>
+                                    <td class="text-center p-0" data-label="Eerder oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q7" value="2"></label></td>
+                                    <td class="text-center p-0" data-label="Neutraal"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q7" value="3"></label></td>
+                                    <td class="text-center p-0" data-label="Eerder eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q7" value="4"></label></td>
+                                    <td class="text-center p-0" data-label="Helemaal eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q7" value="5"></label></td>
+                                </tr>
+                                <tr>
+                                    <td>8. Ik voel mij rustig en ontspannen omdat werkgerelateerde ICT's buiten de werkuren weinig of geen rol spelen in mijn leven.</td>
+                                    <td class="text-center p-0" data-label="Helemaal oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q8" value="1" required></label></td>
+                                    <td class="text-center p-0" data-label="Eerder oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q8" value="2"></label></td>
+                                    <td class="text-center p-0" data-label="Neutraal"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q8" value="3"></label></td>
+                                    <td class="text-center p-0" data-label="Eerder eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q8" value="4"></label></td>
+                                    <td class="text-center p-0" data-label="Helemaal eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q8" value="5"></label></td>
+                                </tr>
+                                <tr>
+                                    <td>9. Ook wanneer ik tijdens de werkuren veel digitale communicatie, berichten en wisselende vragen krijg, blijf ik me comfortabel en in controle voelen.</td>
+                                    <td class="text-center p-0" data-label="Helemaal oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q9" value="1" required></label></td>
+                                    <td class="text-center p-0" data-label="Eerder oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q9" value="2"></label></td>
+                                    <td class="text-center p-0" data-label="Neutraal"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q9" value="3"></label></td>
+                                    <td class="text-center p-0" data-label="Eerder eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q9" value="4"></label></td>
+                                    <td class="text-center p-0" data-label="Helemaal eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q9" value="5"></label></td>
+                                </tr>
+                                <tr>
+                                    <td>10. Ik blijf buiten de werkuren vaak nadenken over werkgerelateerde zaken omdat werkgerelateerde ICTs me eraan herinneren dat het werk blijft doorlopen.</td>
+                                    <td class="text-center p-0" data-label="Helemaal oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q10" value="1" required></label></td>
+                                    <td class="text-center p-0" data-label="Eerder oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q10" value="2"></label></td>
+                                    <td class="text-center p-0" data-label="Neutraal"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q10" value="3"></label></td>
+                                    <td class="text-center p-0" data-label="Eerder eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q10" value="4"></label></td>
+                                    <td class="text-center p-0" data-label="Helemaal eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q10" value="5"></label></td>
+                                </tr>
+                                <tr>
+                                    <td>11. Werkgerelateerde ICTs zorgen ervoor dat werk ook tijdens mijn vrije tijd aanwezig is.</td>
+                                    <td class="text-center p-0" data-label="Helemaal oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q11" value="1" required></label></td>
+                                    <td class="text-center p-0" data-label="Eerder oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q11" value="2"></label></td>
+                                    <td class="text-center p-0" data-label="Neutraal"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q11" value="3"></label></td>
+                                    <td class="text-center p-0" data-label="Eerder eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q11" value="4"></label></td>
+                                    <td class="text-center p-0" data-label="Helemaal eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q11" value="5"></label></td>
+                                </tr>
+                                <tr>
+                                    <td>12. Door buiten de werkuren af en toe werkgerelateerde ICTs te gebruiken, voel ik mij beter voorbereid op mijn werk.</td>
+                                    <td class="text-center p-0" data-label="Helemaal oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q12" value="1" required></label></td>
+                                    <td class="text-center p-0" data-label="Eerder oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q12" value="2"></label></td>
+                                    <td class="text-center p-0" data-label="Neutraal"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q12" value="3"></label></td>
+                                    <td class="text-center p-0" data-label="Eerder eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q12" value="4"></label></td>
+                                    <td class="text-center p-0" data-label="Helemaal eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q12" value="5"></label></td>
+                                </tr>
+                                <tr>
+                                    <td>13. Het geeft mij rust wanneer ik via werkgerelateerde ICTs op de hoogte blijf van wat er op het werk gebeurt.</td>
+                                    <td class="text-center p-0" data-label="Helemaal oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q13" value="1" required></label></td>
+                                    <td class="text-center p-0" data-label="Eerder oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q13" value="2"></label></td>
+                                    <td class="text-center p-0" data-label="Neutraal"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q13" value="3"></label></td>
+                                    <td class="text-center p-0" data-label="Eerder eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q13" value="4"></label></td>
+                                    <td class="text-center p-0" data-label="Helemaal eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q13" value="5"></label></td>
+                                </tr>
+                                <tr>
+                                    <td>14. Door digitale onderbrekingen moet ik regelmatig opnieuw mijn concentratie zoeken, wat mij energie kost.</td>
+                                    <td class="text-center p-0" data-label="Helemaal oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q14" value="1" required></label></td>
+                                    <td class="text-center p-0" data-label="Eerder oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q14" value="2"></label></td>
+                                    <td class="text-center p-0" data-label="Neutraal"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q14" value="3"></label></td>
+                                    <td class="text-center p-0" data-label="Eerder eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q14" value="4"></label></td>
+                                    <td class="text-center p-0" data-label="Helemaal eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q14" value="5"></label></td>
+                                </tr>
+                                <tr>
+                                    <td>15. Werkgerelateerde ICTs halen mij vaak uit mijn werkritme, waardoor ik prikkelbaar of gefrustreerd raak.</td>
+                                    <td class="text-center p-0" data-label="Helemaal oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q15" value="1" required></label></td>
+                                    <td class="text-center p-0" data-label="Eerder oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q15" value="2"></label></td>
+                                    <td class="text-center p-0" data-label="Neutraal"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q15" value="3"></label></td>
+                                    <td class="text-center p-0" data-label="Eerder eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q15" value="4"></label></td>
+                                    <td class="text-center p-0" data-label="Helemaal eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q15" value="5"></label></td>
+                                </tr>
+                                <tr>
+                                    <td>16. Regelmatig schakelen tussen berichten, vragen en taken geeft mij energie tijdens mijn werkdag.</td>
+                                    <td class="text-center p-0" data-label="Helemaal oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q16" value="1" required></label></td>
+                                    <td class="text-center p-0" data-label="Eerder oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q16" value="2"></label></td>
+                                    <td class="text-center p-0" data-label="Neutraal"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q16" value="3"></label></td>
+                                    <td class="text-center p-0" data-label="Eerder eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q16" value="4"></label></td>
+                                    <td class="text-center p-0" data-label="Helemaal eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q16" value="5"></label></td>
+                                </tr>
+                                <tr>
+                                    <td>17. Digitale onderbrekingen passen goed bij mijn manier van werken.</td>
+                                    <td class="text-center p-0" data-label="Helemaal oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q17" value="1" required></label></td>
+                                    <td class="text-center p-0" data-label="Eerder oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q17" value="2"></label></td>
+                                    <td class="text-center p-0" data-label="Neutraal"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q17" value="3"></label></td>
+                                    <td class="text-center p-0" data-label="Eerder eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q17" value="4"></label></td>
+                                    <td class="text-center p-0" data-label="Helemaal eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q17" value="5"></label></td>
+                                </tr>
+                                <tr>
+                                    <td>18. Wanneer werkgerelateerde ICTs veranderen of niet werken zoals verwacht, verlies ik vertrouwen in mijn eigen vaardigheden</td>
+                                    <td class="text-center p-0" data-label="Helemaal oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q18" value="1" required></label></td>
+                                    <td class="text-center p-0" data-label="Eerder oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q18" value="2"></label></td>
+                                    <td class="text-center p-0" data-label="Neutraal"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q18" value="3"></label></td>
+                                    <td class="text-center p-0" data-label="Eerder eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q18" value="4"></label></td>
+                                    <td class="text-center p-0" data-label="Helemaal eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q18" value="5"></label></td>
+                                </tr>
+                                <tr>
+                                    <td>19. Nieuwe digitale systemen of toepassingen maken mij vaak onzeker.</td>
+                                    <td class="text-center p-0" data-label="Helemaal oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q19" value="1" required></label></td>
+                                    <td class="text-center p-0" data-label="Eerder oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q19" value="2"></label></td>
+                                    <td class="text-center p-0" data-label="Neutraal"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q19" value="3"></label></td>
+                                    <td class="text-center p-0" data-label="Eerder eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q19" value="4"></label></td>
+                                    <td class="text-center p-0" data-label="Helemaal eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q19" value="5"></label></td>
+                                </tr>
+                                <tr>
+                                    <td>20. Buiten de werkuren spelen werkgerelateerde ICTs nauwelijks een rol in mijn leven, en dat geeft me rust.</td>
+                                    <td class="text-center p-0" data-label="Helemaal oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q20" value="1" required></label></td>
+                                    <td class="text-center p-0" data-label="Eerder oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q20" value="2"></label></td>
+                                    <td class="text-center p-0" data-label="Neutraal"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q20" value="3"></label></td>
+                                    <td class="text-center p-0" data-label="Eerder eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q20" value="4"></label></td>
+                                    <td class="text-center p-0" data-label="Helemaal eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q20" value="5"></label></td>
+                                </tr>
+                                <tr>
+                                    <td>21.Ik voel weinig nood om via werkgerelateerde ICTs verbonden te blijven met mijn werk wanneer mijn werkdag voorbij is.</td>
+                                    <td class="text-center p-0" data-label="Helemaal oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q21" value="1" required></label></td>
+                                    <td class="text-center p-0" data-label="Eerder oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q21" value="2"></label></td>
+                                    <td class="text-center p-0" data-label="Neutraal"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q21" value="3"></label></td>
+                                    <td class="text-center p-0" data-label="Eerder eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q21" value="4"></label></td>
+                                    <td class="text-center p-0" data-label="Helemaal eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q21" value="5"></label></td>
+                                </tr>
+                                <tr>
+                                    <td>22. Ik ervaar werkgerelateerde ICT's als ondersteunend voor mijn werk, zonder dat ze mijn aandacht voortdurend opeisen.</td>
+                                    <td class="text-center p-0" data-label="Helemaal oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q22" value="1" required></label></td>
+                                    <td class="text-center p-0" data-label="Eerder oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q22" value="2"></label></td>
+                                    <td class="text-center p-0" data-label="Neutraal"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q22" value="3"></label></td>
+                                    <td class="text-center p-0" data-label="Eerder eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q22" value="4"></label></td>
+                                    <td class="text-center p-0" data-label="Helemaal eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q22" value="5"></label></td>
+                                </tr>
+                                <tr>
+                                    <td>23. Werkgerelateerde ICT's helpen mij om mijn werk uit te voeren zonder dat ze voor veel druk, afleiding of onderbrekingen zorgen.</td>
+                                    <td class="text-center p-0" data-label="Helemaal oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q23" value="1" required></label></td>
+                                    <td class="text-center p-0" data-label="Eerder oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q23" value="2"></label></td>
+                                    <td class="text-center p-0" data-label="Neutraal"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q23" value="3"></label></td>
+                                    <td class="text-center p-0" data-label="Eerder eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q23" value="4"></label></td>
+                                    <td class="text-center p-0" data-label="Helemaal eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q23" value="5"></label></td>
+                                </tr>
+                                <tr>
+                                    <td>24. Tijdens mijn werkdag ervaar ik werkgerelateerde ICT's als voorspelbaar en rustig in gebruik.</td>
+                                    <td class="text-center p-0" data-label="Helemaal oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q24" value="1" required></label></td>
+                                    <td class="text-center p-0" data-label="Eerder oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q24" value="2"></label></td>
+                                    <td class="text-center p-0" data-label="Neutraal"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q24" value="3"></label></td>
+                                    <td class="text-center p-0" data-label="Eerder eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q24" value="4"></label></td>
+                                    <td class="text-center p-0" data-label="Helemaal eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q24" value="5"></label></td>
+                                </tr>
+                                <tr>
+                                    <td>25. Het gebruik van werkgerelateerde ICT's verloopt meestal vlot, waardoor ik mij kalm en geconcentreerd kan voelen tijdens het werk.</td>
+                                    <td class="text-center p-0" data-label="Helemaal oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q25" value="1" required></label></td>
+                                    <td class="text-center p-0" data-label="Eerder oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q25" value="2"></label></td>
+                                    <td class="text-center p-0" data-label="Neutraal"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q25" value="3"></label></td>
+                                    <td class="text-center p-0" data-label="Eerder eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q25" value="4"></label></td>
+                                    <td class="text-center p-0" data-label="Helemaal eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q25" value="5"></label></td>
+                                </tr>
+                                <tr>
+                                    <td>26. Ook wanneer veel digitale communicatie tegelijk binnenkomt, voel ik mij comfortabel en in controle.</td>
+                                    <td class="text-center p-0" data-label="Helemaal oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q26" value="1" required></label></td>
+                                    <td class="text-center p-0" data-label="Eerder oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q26" value="2"></label></td>
+                                    <td class="text-center p-0" data-label="Neutraal"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q26" value="3"></label></td>
+                                    <td class="text-center p-0" data-label="Eerder eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q26" value="4"></label></td>
+                                    <td class="text-center p-0" data-label="Helemaal eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q26" value="5"></label></td>
+                                </tr>
+                                <tr>
+                                    <td>27. Mijn werk vraagt zelden dat ik voortdurend reageer op digitale communicatie.</td>
+                                    <td class="text-center p-0" data-label="Helemaal oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q27" value="1" required></label></td>
+                                    <td class="text-center p-0" data-label="Eerder oneens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q27" value="2"></label></td>
+                                    <td class="text-center p-0" data-label="Neutraal"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q27" value="3"></label></td>
+                                    <td class="text-center p-0" data-label="Eerder eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q27" value="4"></label></td>
+                                    <td class="text-center p-0" data-label="Helemaal eens"><label class="d-flex align-items-center justify-content-center h-100 m-0" style="min-height: 2.5rem;"><input class="form-check-input" type="radio" name="q27" value="5"></label></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-4 shadow-sm welcome-card">
+                <div class="card-body">
+                    <h3 class="card-title mb-4">Stellingen</h3>
+                    <p class="card-text mb-4">Lees de stellingen in onderstaande lijst. Duid de stelling aan die het meest herkenbaar klinkt voor jou. Je kan slechts één stelling kiezen.</p>
+
+                    <div class="list-group">
+                        <label class="list-group-item d-flex align-items-start gap-3">
+                            <input class="form-check-input mt-1" type="radio" name="quote" value="1" required>
+                            <span class="fst-italic">Ik ervaar werkgerelateerde ICTs als permanent aanwezig. Door de voortdurende digitale onderbrekingen tijdens het werk en het blijvende gevoel met het werk bezig te moeten zijn buiten de werkuren, lukt het me nauwelijks om mentaal afstand te nemen van het werk en voel ik me vaak overbelast, gespannen en uitgeput.</span>
+                        </label>
+                        <label class="list-group-item d-flex align-items-start gap-3">
+                            <input class="form-check-input mt-1" type="radio" name="quote" value="2">
+                            <span class="fst-italic">Ik ervaar werkgerelateerde ICT's als moeilijk af te bakenen. Daardoor voel ik me soms gespannen of bezorgd en vind ik het moeilijk om mentaal afstand te nemen van het werk.</span>
+                        </label>
+                        <label class="list-group-item d-flex align-items-start gap-3">
+                            <input class="form-check-input mt-1" type="radio" name="quote" value="3">
+                            <span class="fst-italic">Ik ervaar werkgerelateerde ICT's als voortdurend onderbrekend. Door de vele digitale onderbrekingen tijdens mijn werkdag raak ik moeilijk geconcentreerd, waardoor ik me vaak gefrustreerd, prikkelbaar en mentaal belast voel. Buiten de werkuren spelen werkgerelateerde ICTs geen bepalende rol in mijn leven.</span>
+                        </label>
+                        <label class="list-group-item d-flex align-items-start gap-3">
+                            <input class="form-check-input mt-1" type="radio" name="quote" value="4">
+                            <span class="fst-italic">Ik ervaar werkgerelateerde ICT's als veeleisend en complex. Wanneer digitale systemen veranderen of niet werken zoals verwacht, voel ik me vaak onzeker, twijfel ik aan mezelf en raak ik mentaal vermoeid.</span>
+                        </label>
+                        <label class="list-group-item d-flex align-items-start gap-3">
+                            <input class="form-check-input mt-1" type="radio" name="quote" value="5">
+                            <span class="fst-italic">Ik ervaar werkgerelateerde ICT's als ondersteunend in mijn werk. Ondanks de vele digitale onderbrekingen tijdens de werkdag en de hoge verbondenheid buiten de werkuren voel ik me comfortabel, in controle en niet snel overweldigd.</span>
+                        </label>
+                        <label class="list-group-item d-flex align-items-start gap-3">
+                            <input class="form-check-input mt-1" type="radio" name="quote" value="6">
+                            <span class="fst-italic">Ik ervaar werkgerelateerde ICT's als een natuurlijke brug tussen mijn werk- en privéleven. Werk en privé lopen soms door elkaar, maar dat voelt comfortabel en geruststellend, terwijl ik het werk toch mentaal kan loslaten wanneer nodig. Tijdens de werkuren ervaar ik amper onderbreking door werkgerelateerde ICTs omwille van de aard van mijn job of omdat ik zelf interrupties reduceer (bv. door mailbox te sluiten).</span>
+                        </label>
+                        <label class="list-group-item d-flex align-items-start gap-3">
+                            <input class="form-check-input mt-1" type="radio" name="quote" value="7">
+                            <span class="fst-italic">Ik ervaar werkgerelateerde ICT's als een dynamisch onderdeel van mijn werkdag. De vele digitale onderbrekingen geven me energie en helpen me alert te blijven, zonder dat ik me hierdoor gestrest of overweldigd voel. Buiten de werkuren spelen werkgerelateerde ICT's geen bepalende rol in mijn leven.</span>
+                        </label>
+                        <label class="list-group-item d-flex align-items-start gap-3">
+                            <input class="form-check-input mt-1" type="radio" name="quote" value="8">
+                            <span class="fst-italic">Ik ervaar werkgerelateerde ICT's als voorspelbaar en duidelijk afgebakend. Tijdens de werkuren ondersteunen ze mijn werk zonder afleiding te veroorzaken en buiten de werkuren komen ze mijn privé niet binnen. Ik voel me rustig en kalm en kan mentaal goed loskoppelen van het werk.</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-4 shadow-sm welcome-card">
+                <div class="card-body">
+                    <h3 class="card-title mb-4">Resultaat</h3>
+                    <button type="submit" id="calculate-result-btn" class="btn btn-green">Bereken mijn resultaat</button>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/selftest.js"></script>
+</body>
+</html>
