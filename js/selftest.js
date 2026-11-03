@@ -237,6 +237,12 @@ function* getStatements()
     yield new Statement("22. Het gebruik van werkgerelateerde ICT's verloopt meestal vlot, waardoor ik mij kalm en geconcentreerd kan voelen tijdens het werk.", [1, 3, 5, 7], [], [8, 6, 2]);
     yield new Statement("23. Wanneer ik buiten de werkuren via werkgerelateerde ICTs in contact sta met het werk, voel ik druk of spanning.", [5, 6], [3, 7, 8], [1, 2]);
     yield new Statement("24. De mogelijkheid om buiten de werkuren gebruik te maken van werkgerelateerde ICT's past goed bij de manier waarop ik mijn werk organiseer. Ik vind het fijn en het geeft me standvastigheid.", [1, 2], [3, 7, 8], [5, 6]);
+    yield new Statement("25. Vooral de opeenstapeling van onderbrekingen tijdens de werkdag zorgt ervoor dat ik buiten de werkuren nog met het werk bezig blijf, eerder dan onzekerheid over wat er van mij verwacht wordt.", [2], [], [1]);
+    yield new Statement("26. Zelfs als er geen concrete aanleiding toe is, controleer ik buiten de werkuren uit voorzorg berichten, uit angst iets te missen of iets verkeerd te doen.", [1, 8], [], [2]);
+    yield new Statement("27. Digitale onderbrekingen tijdens de werkdag laten geen sporen na zodra mijn werkdag voorbij is.", [1], [], [3, 7, 8]);
+    yield new Statement("28. Of ik mij comfortabel voel met werkgerelateerde ICT's hangt vooral af van hoe vlot ik tijdens een drukke werkdag kan schakelen tussen taken, eerder dan van wat er buiten de werkuren gebeurt.", [6], [], [5, 7]);
+    yield new Statement("29. Het voelt voor mij geruststellend om buiten de werkuren af en toe kort met werkgerelateerde ICT's bezig te zijn, zonder dat dit belastend aanvoelt.", [5], [], [6]);
+    yield new Statement("30. Mijn gevoel van balans met werkgerelateerde ICT's hangt af van het kunnen compenseren van extra beschikbaarheid buiten de werkuren op een ander moment.", [7], [], [5]);
 }
 
 

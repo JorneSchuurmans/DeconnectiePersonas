@@ -25,6 +25,13 @@ body {
     color: #fff;
 }
 
+.nav-link.active,
+.dropdown-item.active {
+    background-color: transparent;
+    color: #fff;
+    font-weight: 700;
+}
+
 .welcome-card {
     background-color: #fffbf2;
     border: 3px solid #609b4d;
